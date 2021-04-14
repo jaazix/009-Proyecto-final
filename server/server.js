@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
     res.send('<h1>Bienvenido a mi servidor REST del proyecto final</h1>');
 });
 
-
+app.use(require('./routes/usuario'));
 
 mongoose.connect('mongodb+srv://admin:password_server20@cluster0.nckh7.mongodb.net/ProyectoFinal', {
 
