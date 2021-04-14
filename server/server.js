@@ -15,6 +15,9 @@ app.get('/', function(req, res) {
 });
 
 app.use(require('./routes/usuario'));
+app.use(require('./routes/categoria'));
+app.use(require('./routes/productos'));
+app.use(require('./routes/login'));
 
 mongoose.connect('mongodb+srv://admin:password_server20@cluster0.nckh7.mongodb.net/ProyectoFinal', {
 
